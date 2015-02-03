@@ -1,0 +1,96 @@
+29/Jan 16:49:11 INFO  eclipse.EclipsePlugin configureLog  - Logging configured.
+29/Jan 16:49:11 DEBUG eclipse.EclipsePlugin start  - Plugin started
+29/Jan 16:49:12 DEBUG eclipse.AccuRevStartUp earlyStartup  - Accurev rev setup earlyStartup..
+29/Jan 16:49:12 DEBUG managers.LoginSessionManager loadLoginSessions  - Started
+29/Jan 16:49:12 DEBUG actions.NewCommonCommandExecutorContext exec  - Exec cmd:com.accurev.commons.commands.info.impl.InfoCommandImpl@2caa27f1
+29/Jan 16:49:12 DEBUG actions.NewCommonCommandExecutorContext run  - Running command with null session.
+java.lang.Throwable
+	at com.accurev.ide.eclipse.actions.NewCommonCommandExecutorContext$2.run(NewCommonCommandExecutorContext.java:325)
+	at com.accurev.ide.eclipse.ResourcesManager.performWithLoginLock(ResourcesManager.java:1268)
+	at com.accurev.ide.eclipse.actions.NewCommonCommandExecutorContext.runCommand(NewCommonCommandExecutorContext.java:342)
+	at com.accurev.ide.eclipse.actions.NewCommonCommandExecutorContext.exec(NewCommonCommandExecutorContext.java:197)
+	at com.accurev.ide.eclipse.operations.WorkspaceInformationOperations.getWorkspaceInformation(WorkspaceInformationOperations.java:126)
+	at com.accurev.ide.eclipse.operations.WorkspaceInformationOperations.getWorkspaceInformation(WorkspaceInformationOperations.java:75)
+	at com.accurev.common.utils.SecurityUtils.getAcClientFileBin(SecurityUtils.java:125)
+	at com.accurev.common.utils.SecurityUtils.parseServers(SecurityUtils.java:194)
+	at com.accurev.common.utils.SecurityUtils.getServers(SecurityUtils.java:309)
+	at com.accurev.ide.eclipse.managers.LoginSessionManager.loadLoginSessions(LoginSessionManager.java:114)
+	at com.accurev.ide.eclipse.AccuRevStartUp.earlyStartup(AccuRevStartUp.java:37)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$63.run(Workbench.java:2470)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+29/Jan 16:49:13 DEBUG actions.NewCommonCommandExecutorContext exec  - Exec completed cmd:com.accurev.commons.commands.info.impl.InfoCommandImpl@2caa27f1
+29/Jan 16:49:13 DEBUG utils.SecurityUtils parseServers  - Found server:accurev1:5050
+29/Jan 16:49:13 DEBUG utils.SecurityUtils getServers  - Using last user details:com.accurev.ide.eclipse.data.ServersData$Server@6b6c313[name=accurev1,port=5050,lastUser=ltao,session=31c51b27b896dc4a95d492162497a33f]
+29/Jan 16:49:13 DEBUG managers.LoginSessionManager loadLoginSessions  - Server:com.accurev.ide.eclipse.data.ServersData$Server@6b6c313[name=accurev1,port=5050,lastUser=ltao,session=31c51b27b896dc4a95d492162497a33f]
+29/Jan 16:49:13 DEBUG managers.LoginSessionManager joinWorkspacesWithToken  - Found a new session:com.accurev.commons.commands.impl.SessionImpl@8d0eb8f[host=accurev1,port=5050,token=31c51b27b896dc4a95d492162497a33f,user=ltao]
+29/Jan 16:49:13 DEBUG managers.LoginSessionManager joinWorkspacesWithToken  - Found a session without wspaces, associate it with appropriate wspaces
+29/Jan 16:49:13 DEBUG actions.NewCommonCommandExecutorContext exec  - Exec cmd:com.accurev.commons.commands.info.impl.InfoCommandImpl@49248ad1
+29/Jan 16:49:13 DEBUG actions.NewCommonCommandExecutorContext exec  - Exec completed cmd:com.accurev.commons.commands.info.impl.InfoCommandImpl@49248ad1
+29/Jan 16:49:13 DEBUG process.StreamProcess runShowWorkspaces  - Started
+29/Jan 16:49:13 DEBUG actions.NewCommonCommandExecutorContext exec  - Exec cmd:com.accurev.commons.commands.show.ShowCommandBuilder$1@422aeb
+29/Jan 16:49:13 DEBUG actions.NewCommonCommandExecutorContext exec  - Exec completed cmd:com.accurev.commons.commands.show.ShowCommandBuilder$1@422aeb
+29/Jan 16:49:13 DEBUG process.StreamProcess runShowWorkspaces  - Ended
+29/Jan 16:49:13 DEBUG managers.LoginSessionManager joinWorkspacesWithToken  - Session:com.accurev.commons.commands.impl.SessionImpl@8d0eb8f[host=accurev1,port=5050,token=31c51b27b896dc4a95d492162497a33f,user=ltao] Workspace:com.accurev.commons.commands.response.xml.WSShowElement@25be606[number=<null>,name=vap_devel_VM3_ltao,kind=<null>,type=1,userId=377,user=ltao,hidden=false,storage=/usr/local/litle-home/ltao/cvs,host=ltao-vm3.dwi.litle.com,stream=4593,targetTrans=1139016,trans=1139016,eol=0,depot=vap,isActive=false]
+29/Jan 16:49:13 DEBUG managers.LoginSessionManager joinWorkspacesWithToken  - Session:com.accurev.commons.commands.impl.SessionImpl@8d0eb8f[host=accurev1,port=5050,token=31c51b27b896dc4a95d492162497a33f,user=ltao] Workspace:com.accurev.commons.commands.response.xml.WSShowElement@55851413[number=<null>,name=vap_devel_vm1_ltao,kind=<null>,type=1,userId=377,user=ltao,hidden=false,storage=/usr/local/litle-home/ltao/cvs,host=ltao-vm1.dwi.litle.com,stream=4600,targetTrans=1139117,trans=1139117,eol=0,depot=vap,isActive=false]
+29/Jan 16:49:13 DEBUG managers.LoginSessionManager loadLoginSessions  - Ended
+29/Jan 16:49:13 DEBUG eclipse.ResourcesManager refreshAllDecoratorIcons  - Workspace: /usr/local/litle-home/ltao/workspace
+29/Jan 16:49:13 DEBUG common.CacheManager clearAllCaches  - Started
+29/Jan 16:49:13 DEBUG common.CacheManager clearAllCaches  - Ended
+29/Jan 16:49:20 DEBUG eclipse.EclipsePlugin stop  - Stopping plugin
+29/Jan 16:49:30 INFO  eclipse.EclipsePlugin configureLog  - Logging configured.
+29/Jan 16:49:30 DEBUG eclipse.EclipsePlugin start  - Plugin started
+29/Jan 16:49:32 DEBUG eclipse.AccuRevStartUp earlyStartup  - Accurev rev setup earlyStartup..
+29/Jan 16:49:32 DEBUG managers.LoginSessionManager loadLoginSessions  - Started
+29/Jan 16:49:32 DEBUG actions.NewCommonCommandExecutorContext exec  - Exec cmd:com.accurev.commons.commands.info.impl.InfoCommandImpl@27d8080
+29/Jan 16:49:32 DEBUG actions.NewCommonCommandExecutorContext run  - Running command with null session.
+java.lang.Throwable
+	at com.accurev.ide.eclipse.actions.NewCommonCommandExecutorContext$2.run(NewCommonCommandExecutorContext.java:325)
+	at com.accurev.ide.eclipse.ResourcesManager.performWithLoginLock(ResourcesManager.java:1268)
+	at com.accurev.ide.eclipse.actions.NewCommonCommandExecutorContext.runCommand(NewCommonCommandExecutorContext.java:342)
+	at com.accurev.ide.eclipse.actions.NewCommonCommandExecutorContext.exec(NewCommonCommandExecutorContext.java:197)
+	at com.accurev.ide.eclipse.operations.WorkspaceInformationOperations.getWorkspaceInformation(WorkspaceInformationOperations.java:126)
+	at com.accurev.ide.eclipse.operations.WorkspaceInformationOperations.getWorkspaceInformation(WorkspaceInformationOperations.java:75)
+	at com.accurev.common.utils.SecurityUtils.getAcClientFileBin(SecurityUtils.java:125)
+	at com.accurev.common.utils.SecurityUtils.parseServers(SecurityUtils.java:194)
+	at com.accurev.common.utils.SecurityUtils.getServers(SecurityUtils.java:309)
+	at com.accurev.ide.eclipse.managers.LoginSessionManager.loadLoginSessions(LoginSessionManager.java:114)
+	at com.accurev.ide.eclipse.AccuRevStartUp.earlyStartup(AccuRevStartUp.java:37)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$63.run(Workbench.java:2470)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+29/Jan 16:49:32 DEBUG actions.NewCommonCommandExecutorContext exec  - Exec completed cmd:com.accurev.commons.commands.info.impl.InfoCommandImpl@27d8080
+29/Jan 16:49:32 DEBUG utils.SecurityUtils parseServers  - Found server:accurev1:5050
+29/Jan 16:49:32 DEBUG utils.SecurityUtils getServers  - Using last user details:com.accurev.ide.eclipse.data.ServersData$Server@7134626b[name=accurev1,port=5050,lastUser=ltao,session=31c51b27b896dc4a95d492162497a33f]
+29/Jan 16:49:32 DEBUG managers.LoginSessionManager loadLoginSessions  - Server:com.accurev.ide.eclipse.data.ServersData$Server@7134626b[name=accurev1,port=5050,lastUser=ltao,session=31c51b27b896dc4a95d492162497a33f]
+29/Jan 16:49:32 DEBUG managers.LoginSessionManager joinWorkspacesWithToken  - Found a new session:com.accurev.commons.commands.impl.SessionImpl@693eac60[host=accurev1,port=5050,token=31c51b27b896dc4a95d492162497a33f,user=ltao]
+29/Jan 16:49:32 DEBUG managers.LoginSessionManager joinWorkspacesWithToken  - Found a session without wspaces, associate it with appropriate wspaces
+29/Jan 16:49:32 DEBUG actions.NewCommonCommandExecutorContext exec  - Exec cmd:com.accurev.commons.commands.info.impl.InfoCommandImpl@c2beb3a
+29/Jan 16:49:32 DEBUG actions.NewCommonCommandExecutorContext exec  - Exec completed cmd:com.accurev.commons.commands.info.impl.InfoCommandImpl@c2beb3a
+29/Jan 16:49:32 DEBUG process.StreamProcess runShowWorkspaces  - Started
+29/Jan 16:49:32 DEBUG actions.NewCommonCommandExecutorContext exec  - Exec cmd:com.accurev.commons.commands.show.ShowCommandBuilder$1@74d69157
+29/Jan 16:49:32 DEBUG actions.NewCommonCommandExecutorContext exec  - Exec completed cmd:com.accurev.commons.commands.show.ShowCommandBuilder$1@74d69157
+29/Jan 16:49:32 DEBUG process.StreamProcess runShowWorkspaces  - Ended
+29/Jan 16:49:32 DEBUG managers.LoginSessionManager joinWorkspacesWithToken  - Session:com.accurev.commons.commands.impl.SessionImpl@693eac60[host=accurev1,port=5050,token=31c51b27b896dc4a95d492162497a33f,user=ltao] Workspace:com.accurev.commons.commands.response.xml.WSShowElement@426d0606[number=<null>,name=vap_devel_VM3_ltao,kind=<null>,type=1,userId=377,user=ltao,hidden=false,storage=/usr/local/litle-home/ltao/cvs,host=ltao-vm3.dwi.litle.com,stream=4593,targetTrans=1139016,trans=1139016,eol=0,depot=vap,isActive=false]
+29/Jan 16:49:32 DEBUG managers.LoginSessionManager joinWorkspacesWithToken  - Session:com.accurev.commons.commands.impl.SessionImpl@693eac60[host=accurev1,port=5050,token=31c51b27b896dc4a95d492162497a33f,user=ltao] Workspace:com.accurev.commons.commands.response.xml.WSShowElement@3a695fc[number=<null>,name=vap_devel_vm1_ltao,kind=<null>,type=1,userId=377,user=ltao,hidden=false,storage=/usr/local/litle-home/ltao/cvs,host=ltao-vm1.dwi.litle.com,stream=4600,targetTrans=1139117,trans=1139117,eol=0,depot=vap,isActive=false]
+29/Jan 16:49:32 DEBUG managers.LoginSessionManager loadLoginSessions  - Ended
+29/Jan 16:49:32 DEBUG eclipse.ResourcesManager refreshAllDecoratorIcons  - Workspace: /usr/local/litle-home/ltao/git
+29/Jan 16:49:32 DEBUG common.CacheManager clearAllCaches  - Started
+29/Jan 16:49:32 DEBUG common.CacheManager clearAllCaches  - Ended
+29/Jan 16:50:34 INFO  actions.DefunctSearchesActionDelegate <init>  - inside AbstractSearchActionDelegate constructor...
+29/Jan 16:50:34 INFO  actions.StrandedSearchesActionDelegate <init>  - inside AbstractSearchActionDelegate constructor...
+29/Jan 16:50:34 INFO  actions.MissingSearchesActionDelegate <init>  - inside AbstractSearchActionDelegate constructor...
+29/Jan 16:50:34 INFO  actions.ExternalSearchesActionDelegate <init>  - inside AbstractSearchActionDelegate constructor...
+29/Jan 16:50:34 INFO  actions.ModifiedInDefaultGroupSearchesActionDelegate <init>  - inside AbstractSearchActionDelegate constructor...
+29/Jan 16:50:34 INFO  actions.DeepOverlapSearchesActionDelegate <init>  - inside AbstractSearchActionDelegate constructor...
+29/Jan 16:50:34 INFO  actions.UnderlapSearchesActionDelegate <init>  - inside AbstractSearchActionDelegate constructor...
+29/Jan 16:50:34 INFO  actions.OverlapSearchesActionDelegate <init>  - inside AbstractSearchActionDelegate constructor...
+29/Jan 16:50:34 INFO  actions.DefaultGroupSearchesActionDelegate <init>  - inside AbstractSearchActionDelegate constructor...
+29/Jan 16:50:34 INFO  actions.NonMemberSearchesActionDelegate <init>  - inside AbstractSearchActionDelegate constructor...
+29/Jan 16:50:34 INFO  actions.ModifiedSearchesActionDelegate <init>  - inside AbstractSearchActionDelegate constructor...
+29/Jan 16:50:34 INFO  actions.KeptSearchesActionDelegate <init>  - inside AbstractSearchActionDelegate constructor...
+29/Jan 16:50:34 INFO  actions.PendingSearchesActionDelegate <init>  - inside AbstractSearchActionDelegate constructor...
