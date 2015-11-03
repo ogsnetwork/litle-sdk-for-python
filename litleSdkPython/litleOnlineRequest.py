@@ -96,10 +96,15 @@ class litleOnlineRequest:
         return responseXml
     
     def _processResponse(self, responseXml):
+        
         print responseXml
+        
         temp = self._addNamespace(responseXml)
+        
         try:
+            
             logging.error(responseXml)
+            
             response =litleXmlFields.CreateFromDocument(temp)
         except Exception, e:
             raise Exception("Error Processing Response", e)    
