@@ -27,6 +27,7 @@ import pyxb
 import os
 from Communications import *
 from Configuration import *
+import logging
 
 class litleOnlineRequest:
         
@@ -97,6 +98,7 @@ class litleOnlineRequest:
     def _processResponse(self, responseXml):
         temp = self._addNamespace(responseXml)
         try:
+            logging.error(responseXml)
             response =litleXmlFields.CreateFromDocument(temp)
         except Exception, e:
             raise Exception("Error Processing Response", e)    
